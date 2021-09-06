@@ -1,0 +1,14 @@
+[user]
+	name = Foo Bar
+	email = foo@bar.com
+[push]
+	default = simple
+[pull]
+	rebase = true
+[diff]
+	compactionHeuristic = true
+[core]
+	eol = lf
+	editor = vim
+	autocrlf = input
+	commentChar = ";"
