@@ -1,6 +1,10 @@
 [user]
 	name = Foo Bar
 	email = foo@bar.com
+#	signingkey = ...
+[alias]
+	logd = log --decorate --source --graph --all
+	pulls = ! git stash -q && git pull && git stash pop -q
 [push]
 	default = simple
 [pull]
@@ -11,4 +15,12 @@
 	eol = lf
 	editor = vim
 	autocrlf = input
+	excludesfile = ~/.gitcfg/.gitignore_global
 	commentChar = ";"
+#[commit]
+#	gpgsign = true
+#[filter "lfs"]
+#       clean = git-lfs clean -- %f
+#       smudge = git-lfs smudge -- %f
+#       process = git-lfs filter-process
+#       required = true

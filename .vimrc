@@ -12,3 +12,7 @@ set fileencoding=utf-8
 
 " highlighting search matches
 set hlsearch
+
+" highlighling of current line but it slows down srolling
+set cursorline
+hi CursorLine term=bold cterm=bold guibg=Grey40
