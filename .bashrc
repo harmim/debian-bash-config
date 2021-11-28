@@ -25,7 +25,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 # Set a fancy prompt (non-color, unless we know we "want" color).
 case "$TERM" in
-  xterm-color) color_prompt=yes;;
+  xterm-color|*-256color) color_prompt=yes;;
 esac
 # A colored prompt, if the terminal has the capability.
 if [ -x /usr/bin/tput ] && tput setaf 1 >& /dev/null; then
@@ -60,6 +60,9 @@ if [ -x /usr/bin/dircolors ]; then
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'
 fi
+
+# Colored GCC warnings and errors.
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Some more ls aliases.
 alias ll='ls -AlFh'
