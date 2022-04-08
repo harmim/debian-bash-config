@@ -16,3 +16,16 @@ set hlsearch
 " highlighling of current line but it slows down srolling
 "set cursorline
 "hi CursorLine term=bold cterm=bold guibg=Grey40
+
+" show whitespaces using F2
+noremap <F2> :set list!<CR>
+set listchars=tab:>-,trail:.
+
+" indentation commands
+command Spaces2 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+command Spaces4 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+command Tabs set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+Tabs
+
+" set rulers
+set colorcolumn=80,100,120
