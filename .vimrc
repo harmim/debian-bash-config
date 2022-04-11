@@ -6,6 +6,9 @@ filetype plugin indent on
 syntax enable
 colorscheme monokai
 
+" install plugins using pathogen.vim
+execute pathogen#infect()
+
 " coding
 set encoding=utf-8
 set fileencoding=utf-8
