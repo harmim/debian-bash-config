@@ -32,3 +32,6 @@ Tabs
 
 " set rulers
 set colorcolumn=80,100,120
+
+" set update time for GitGutter
+set updatetime=100
