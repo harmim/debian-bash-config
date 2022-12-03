@@ -103,3 +103,29 @@ export LESS_TERMCAP_us=$(printf '\e[04;36m')
 # Completion using F1.
 bind 'TAB:complete'
 bind '"\eOP":menu-complete' # F1
+
+# Fix coloures on macOS.
+#export CLICOLOR=1
+#export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Brew stuff.
+#if type brew &> /dev/null; then
+#  HOMEBREW_PREFIX="$(brew --prefix)"
+#
+#  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
+#    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+#  else
+#    for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
+#      [[ -r "$COMPLETION" ]] && source "$COMPLETION"
+#    done
+#  fi
+#
+#  if [ -d "${HOMEBREW_PREFIX}/opt/curl/bin" ]; then
+#    PATH="${HOMEBREW_PREFIX}/opt/curl/bin:$PATH"
+#  fi
+#fi
+
+# Hide deprecated bash warning on macOS.
+#export BASH_SILENCE_DEPRECATION_WARNING=1
+
+export PATH

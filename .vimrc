@@ -35,3 +35,6 @@ set colorcolumn=80,100,120
 
 " set update time for GitGutter
 set updatetime=100
+
+" backspace fix
+set backspace=indent,eol,start

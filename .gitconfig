@@ -1,10 +1,11 @@
 [user]
 	name = Foo Bar
 	email = foo@bar.com
-#	signingkey = ...
+	signingkey = ~/.ssh/id_rsa.pub
 [alias]
 	logd = log --decorate --source --graph --all
 	pulls = ! git stash -q && git pull && git stash pop -q
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
 [init]
 	defaultBranch = master
 [push]
@@ -16,10 +17,14 @@
 	autocrlf = input
 	excludesfile = ~/.gitcfg/.gitignore_global
 	commentChar = ";"
-#[commit]
-#	gpgsign = true
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
 #[filter "lfs"]
 #       clean = git-lfs clean -- %f
 #       smudge = git-lfs smudge -- %f
 #       process = git-lfs filter-process
 #       required = true
+#[credential]
+#	helper = osxkeychain
