@@ -1,3 +1,6 @@
+# setup brew
+#eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
   # include .bashrc if it exists
@@ -9,9 +12,6 @@ if [ -n "$BASH_VERSION" ]; then
     . "$HOME/.bashrc"
   fi
 fi
-
-# setup brew
-#eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ]; then
