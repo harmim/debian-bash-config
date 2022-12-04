@@ -28,6 +28,14 @@ if [ -d "$HOME/.local/bin" ]; then
   PATH="$HOME/.local/bin:$PATH"
 fi
 
+# NPM bin path
+#if [ -d "$HOME/.npm-packages/bin" ]; then
+#  PATH="$HOME/.npm-packages/bin:$PATH"
+#fi
+
+# opam configuration
+#test -r "$HOME/.opam/opam-init/init.sh" && . "$HOME/.opam/opam-init/init.sh" > /dev/null 2> /dev/null || true
+
 # Rust
 #if [ -f "$HOME/.cargo/env" ]; then
 #  . "$HOME/.cargo/env"

@@ -123,6 +123,14 @@ bind '"\eOP":menu-complete' # F1
 #  if [ -d "${HOMEBREW_PREFIX}/opt/curl/bin" ]; then
 #    PATH="${HOMEBREW_PREFIX}/opt/curl/bin:$PATH"
 #  fi
+#
+#  if [ -d "${HOMEBREW_PREFIX}/opt/sqlite/bin" ]; then
+#    PATH="${HOMEBREW_PREFIX}/opt/sqlite/bin:$PATH"
+#  fi
+#
+#  if [ -d "${HOMEBREW_PREFIX}/opt/grep/libexec/gnubin" ]; then
+#    PATH="${HOMEBREW_PREFIX}/opt/grep/libexec/gnubin:$PATH"
+#  fi
 #fi
 
 # Hide deprecated bash warning on macOS.
