@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 # Brew
 brew update
 brew outdated
