@@ -14,12 +14,12 @@ if exists brew; then
 fi
 
 if exists apt-get; then
-  sudo apt-get update -y
-  apt-get list --upgradable
-  sudo apt-get upgrade -y
-  apt-get list --upgradable
-  sudo apt-get autoremove
-  sudo apt-get clean
+  sudo apt update -y
+  apt list --upgradable
+  sudo apt upgrade -y
+  apt list --upgradable
+  sudo apt autoremove -y
+  sudo apt clean -y
 fi
 
 if exists rustup; then
