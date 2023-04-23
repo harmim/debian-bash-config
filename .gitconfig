@@ -1,7 +1,7 @@
 [user]
 	name = Foo Bar
 	email = foo@bar.com
-	signingkey = ~/.ssh/id_rsa.pub
+	signingkey = ~/.ssh/id_ecdsa_sk.pub
 [alias]
 	logd = log --decorate --source --graph --all
 	pulls = ! git stash -q && git pull && git stash pop -q
@@ -21,10 +21,16 @@
 	gpgsign = true
 [gpg]
 	format = ssh
+[advice]
+	ignoredHook = false
 #[filter "lfs"]
-#       clean = git-lfs clean -- %f
-#       smudge = git-lfs smudge -- %f
-#       process = git-lfs filter-process
-#       required = true
+#	clean = git-lfs clean -- %f
+#	smudge = git-lfs smudge -- %f
+#	process = git-lfs filter-process
+#	required = true
 #[credential]
 #	helper = osxkeychain
+#[credential "https://github.com"]
+#	helper = !/opt/homebrew/bin/gh auth git-credential
+#[credential "https://gist.github.com"]
+#	helper = !/opt/homebrew/bin/gh auth git-credential
