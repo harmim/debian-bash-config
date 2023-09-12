@@ -32,9 +32,3 @@ if exists pip3; then
   pip3 check
   pip3 cache purge
 fi
-
-if exists opam; then
-  opam update -y
-  opam upgrade -y
-  opam clean -y
-fi
