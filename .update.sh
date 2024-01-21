@@ -28,7 +28,7 @@ if exists rustup; then
 fi
 
 if exists pip3; then
-  pip3 install -U pip
+  pip3 install -U --break-system-packages pip
   pip3 check
   pip3 cache purge
 fi
