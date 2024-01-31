@@ -38,3 +38,7 @@ set updatetime=100
 
 " backspace fix
 set backspace=indent,eol,start
+
+" spell checking
+command Spell set spell spelllang=en_GB
+command Spelloff set nospell
